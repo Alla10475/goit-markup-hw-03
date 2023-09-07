@@ -81,7 +81,7 @@ body {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-
+    padding: 24px 0;
 }
 
 .header-link:hover,
@@ -98,11 +98,17 @@ body {
     text-decoration: none;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 24px 0;
 }
 
 .contacts-link:hover,
 .contacts-link:focus {
     color: var(--c-pressed-state);
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
 }
 
 .menu-nav {
@@ -122,10 +128,11 @@ body {
     padding: 24px 0;
 }
 
-.header-inner {
-    display: flex;
-    justify-content: space-between;
+.contact-item {
+    align-items: center;
 }
+
+
 
 /* Hero section */
 .hero-section {
@@ -176,15 +183,15 @@ body {
 
 .visually-hidden {
     position: absolute;
-    white-space: nowrap;
     width: 1px;
     height: 1px;
-    overflow: hidden;
+    margin: -1px;
     border: 0;
     padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
     clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+    overflow: hidden;
 }
 
 .features-title {
